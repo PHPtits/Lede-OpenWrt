@@ -27,7 +27,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default  #使用源码自带ShadowS
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
 sed -i 's/"Web 管理"/"管理"/g' package/lean/luci-app-webadmin/po/zh-cn/webadmin.po
 #sed -i 's/"管理权"/"密码"/g' feeds/luci/modules/luci-base/po/zh-cn/base.po
-#sed -i 's/"KMS 服务器"/"KMS激活"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
+sed -i 's/"KMS 服务器"/"KMS激活"/g' package/lean/luci-app-vlmcsd/po/zh-cn/vlmcsd.zh-cn.po
 
 
 # Add a feed source增加默认源地址
@@ -56,8 +56,8 @@ svn co https://github.com/xiaorouji/openwrt-package/trunk/package/trojan-plus pa
 
 
 
-git clone https://github.com/jerrykuku/node-request.git package/node-request  #京东签到依赖
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus  #luci-app-jd-dailybonus[京东签到]
+#git clone https://github.com/jerrykuku/node-request.git package/node-request  #京东签到依赖
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus  #luci-app-jd-dailybonus[京东签到]
 
 
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon  #argon-主题
